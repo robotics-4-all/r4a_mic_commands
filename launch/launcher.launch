@@ -1,0 +1,9 @@
+<launch>
+	<node name="voice_command_node" pkg="voice_recorder" type="voiceCommand.py" respawn="False" output="screen" />
+
+	<param name="path" value="$(find voice_recorder)/src/voice_recorder/" />
+
+	<rosparam file="$(find voice_recorder)/config/params.yaml" command="load" />
+	
+	<rosparam file="$(find voice_recorder)/config/topics.yaml" command="load" />
+</launch>

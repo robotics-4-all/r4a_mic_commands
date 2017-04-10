@@ -1,0 +1,5 @@
+channels: 1
+rate: 16000
+input_block_time: 0.05
+dictionary: ['left', 'right', 'head', 'back']
+recognize: True
