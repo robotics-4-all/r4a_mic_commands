@@ -1,6 +1,6 @@
 # r4a_mic_commands
 
-*Code by Vladimiros Sterzenchenco and Alexandros Metsai*
+*Code by Vladimiros Sterzentsenko and Alexandros Metsai*
 
 This code implements an oral command system taking input from a microphone, by utilizing the [RAPP Cloud Platform](https://github.com/robotics-4-all/r4a_rapp_cloud_api_python) ASR infrastructure.
 
