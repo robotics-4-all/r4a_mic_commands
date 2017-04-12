@@ -6,7 +6,11 @@ This code implements an oral command system taking input from a microphone, by u
 
 ## Setup
 
-TOD
+First enter the virtualenv of r4a_rapp_cloud_api_python (unless you have installed it in the system). You should install the following libraries:
+
+```
+[sudo] pip install pyaudio rospkg catkin_pkg
+```
 
 ## Execution
 
