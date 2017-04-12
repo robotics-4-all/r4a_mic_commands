@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 # open a microphone in pyAudio and listen for taps
 
@@ -12,9 +12,6 @@ from RappCloud import RappPlatformAPI
 import rospy
 from std_msgs.msg import String
 
-
-
-
 FORMAT = pyaudio.paInt16 
 SHORT_NORMALIZE = (1.0/32768.0)
 CHANNELS = rospy.get_param("channels")
@@ -24,7 +21,6 @@ dictionary = rospy.get_param("dictionary")
 INPUT_FRAMES_PER_BLOCK = int(RATE*INPUT_BLOCK_TIME)
 PATH = rospy.get_param("path")
 
-
 class voiceCommand:
     def __init__(self):
         self.frames = []
@@ -33,7 +29,6 @@ class voiceCommand:
         self.tap_threshold,self.noise_threshold = self.calibrate()
         self.hear = False
         self.ch = RappPlatformAPI()
-
         
         topic = rospy.get_param("rec_topic")
         self.publisher = rospy.Publisher(topic, String, queue_size=10)
