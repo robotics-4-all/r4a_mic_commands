@@ -204,7 +204,7 @@ class voiceCommand:
         str_response = str(response.get('words'))
         if len(response.get('words')) != 1:
             return ''
-        self.publisher.publish(str_response)
+        str_response = str(response.get('words')[0])
 
         return str_response
 
